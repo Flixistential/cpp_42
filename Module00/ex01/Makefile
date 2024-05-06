@@ -38,13 +38,13 @@ $(NAME): $(OBJ_FILES)
 
 # Clean rule
 clean:
-	rm -f $(OBJ_FILES) $(TARGET)
+	rm -f $(OBJ_FILES) $(NAME)
 
 # Full clean rule for object files and executable
 fclean: clean
-	rm -f $(TARGET)
+	rm -f $(NAME)
 
 # Rule to re-make everything
-re: fclean $(TARGET)
+re: fclean $(NAME)
 # PHONY targets
 .PHONY: clean fclean re

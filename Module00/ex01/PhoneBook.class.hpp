@@ -20,6 +20,7 @@ class PhoneBook
     private:
 
     Contact _contacts[8];
+    int _getIndex(void) const;
 
     public:
 
@@ -27,7 +28,9 @@ class PhoneBook
     ~PhoneBook(void);
     void    start(void) const;
     void    addcontact(void);
-    void    display(void);
+    void    display(void) const;
+    void    search(void) const;
+
 };
 
 #endif //PHONEBOOK_HPP

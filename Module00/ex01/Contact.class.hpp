@@ -26,7 +26,9 @@ class Contact
     std::string _nickname;
     std::string _phone;
     std::string _secret;
-    int         index;
+    int         _index;
+    std::string _Getinput(void);
+    std::string _format(std::string str) const;
 
     public:
 
@@ -35,6 +37,7 @@ class Contact
     
     void init(int i);
     void print(void) const;
+    void display(void) const;
 };
 
 #endif // CONTACT_CLASS_HPP
