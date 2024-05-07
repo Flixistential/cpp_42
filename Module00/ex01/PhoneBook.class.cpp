@@ -34,9 +34,9 @@ void    PhoneBook::addcontact(void)
 {
     static int  i;
     
-    this->_contacts[i].init(i);
     if(i >= 8)
         i = 0;
+    this->_contacts[i].init(i);
     i++;
 }
 

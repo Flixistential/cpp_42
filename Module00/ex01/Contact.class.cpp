@@ -51,6 +51,7 @@ std::string Contact::_format(std::string str) const
 
 void	Contact::init(int i)
 {
+	std::cin.ignore();
     this->_index = i + 1;
     std::cout << "enter your first name: ";
     this->_firstname = _Getinput();
